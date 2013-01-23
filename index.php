@@ -6,32 +6,16 @@
 # Website   http://www.kevinsolomon.com
 -------------------------------------------------------------------------*/
 
-defined( '_JEXEC' ) or die; 
+defined( '_JEXEC' ) or die;
 
-// parameters (template)
-$modernizr = $this->params->get('modernizr');
-$bootstrap = $this->params->get('bootstrap');
-$pie = $this->params->get('pie');
+#Include The Mason Framework
+include_once JPATH_THEMES . '/' . $this->template . '/mason.php';
+?>
 
-// variables
-$app = JFactory::getApplication();
-$doc = JFactory::getDocument(); 
-$params = $app->getParams();
-$pageclass = $params->get('pageclass_sfx'); // parameter (menu entry)
-$tpath = $this->baseurl.'/templates/'.$this->template;
 
-$this->setGenerator(null);
 
-// load sheets and scripts
-$doc->addStyleSheet($tpath.'/css/template.css.php?b='.$bootstrap.'&amp;v=1'); 
-if ($modernizr==1) $doc->addScript($tpath.'/js/modernizr-2.6.2.js'); // <- this script must be in the head
 
-// unset scripts, put them into /js/template.js.php to minify http requests
-unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-core.js']);
-unset($doc->_scripts[$this->baseurl.'/media/system/js/core.js']);
-unset($doc->_scripts[$this->baseurl.'/media/system/js/caption.js']);
-
-?><!doctype html>
+<!doctype html>
 <!--[if IEMobile]><html class="iemobile" lang="<?php echo $this->language; ?>"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="<?php echo $this->language; ?>"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="<?php echo $this->language; ?>"> <![endif]-->
