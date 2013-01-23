@@ -65,7 +65,7 @@
   				<field name="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_DOC" type="spacer" hr="false" />
   				<field type="spacer" hr="true" />
                 <!-- MODERNIZR-->
-                <field name="loadMoo" type="radio" default="0" label="TPL_TEMPLATENAME_PARAMETER_MOOTOOLS_LABEL" description="TPL_TEMPLATENAME_PARAMETER_MOOTOOLS_DESC">
+                <field name="mootools" type="radio" default="0" label="TPL_TEMPLATENAME_PARAMETER_MOOTOOLS_LABEL" description="TPL_TEMPLATENAME_PARAMETER_MOOTOOLS_DESC">
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </field>

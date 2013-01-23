@@ -11,10 +11,6 @@ defined( '_JEXEC' ) or die;
 #Include The Mason Framework
 include_once JPATH_THEMES . '/' . $this->template . '/mason.php';
 ?>
-
-
-
-
 <!doctype html>
 <!--[if IEMobile]><html class="iemobile" lang="<?php echo $this->language; ?>"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="<?php echo $this->language; ?>"> <![endif]-->
