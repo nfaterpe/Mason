@@ -16,7 +16,6 @@ include_once JPATH_THEMES . '/' . $this->template . '/mason.php';
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="<?php echo $this->language; ?>"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="<?php echo $this->language; ?>"> <![endif]-->
 <!--[if gt IE 8]><!-->  <html class="no-js" lang="<?php echo $this->language; ?>"> <!--<![endif]-->
-
 <head>
   <script type="text/javascript" src="<?php echo $tpath.'/js/template.js.php?b='.$bootstrap.'&amp;v=1'; ?>"></script>
   <jdoc:include type="head" />
@@ -34,11 +33,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/mason.php';
 </head>
 	
 <body class="<?php echo $pageclass; ?>">
-  <!-- 
-    YOUR CODE HERE
-  -->
   <jdoc:include type="modules" name="debug" />
 </body>
-
 </html>
 

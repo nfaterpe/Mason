@@ -10,11 +10,16 @@ defined( '_JEXEC' ) or die;
 
 #Template Param for Conditional Loading
 
+# Load Modernizr
 $loadModernizr = $this->params->get('modernizr');
-$loadBootstrap = $this->params->get('bootstrap');
-$loadMootools = $this->params->get('mootools');
-$pie = $this->params->get('pie');
 
+# Load BootStrap
+$loadBootstrap = $this->params->get('bootstrap');
+
+# Load Mootools
+$loadMootools = $this->params->get('mootools');
+
+# If Load Mootools is NO then run this block to remove Mootools
 if ( !$loadMootools ) {
     unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-core.js']);
     unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-more.js']);
@@ -24,6 +29,11 @@ if ( !$loadMootools ) {
     unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools.js']);
     unset($doc->_scripts[$this->baseurl.'/plugins/system/mtupgrade/mootools.js']);
 }
+
+
+# Load Pie Lib for Certain CSS3 support for IE 8 :)))
+$pie = $this->params->get('pie');
+
 
 // variables
 $app = JFactory::getApplication();
