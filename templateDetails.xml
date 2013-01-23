@@ -64,6 +64,13 @@
   				</field>
   				<field name="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_DOC" type="spacer" hr="false" />
   				<field type="spacer" hr="true" />
+                <!-- MODERNIZR-->
+                <field name="loadMoo" type="radio" default="0" label="TPL_TEMPLATENAME_PARAMETER_MOOTOOLS_LABEL" description="TPL_TEMPLATENAME_PARAMETER_MOOTOOLS_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_DOC" type="spacer" hr="false" />
+                <field type="spacer" hr="true" />
 				<!-- PIE-->
   				<field name="pie" type="radio" default="1" label="TPL_TEMPLATENAME_PARAMETER_PIE_LABEL" description="TPL_TEMPLATENAME_PARAMETER_PIE_DESC">
   					<option value="0">JNO</option>
