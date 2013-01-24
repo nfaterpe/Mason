@@ -77,6 +77,12 @@
   					<option value="1">JYES</option>
   				</field>
   				<field name="TPL_TEMPLATENAME_PARAMETER_PIE_DOC" type="spacer" hr="false" />
+                <!--- FRONTPAGE COMPONENT HIDE -->
+                <field name="frontpage" type="radio" default="1" label="TPL_TEMPLATENAME_PARAMETER_FRONTPAGE_LABEL" description="TPL_TEMPLATENAME_PARAMETER_FRONTPAGE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="TPL_TEMPLATENAME_PARAMETER_FRONTPAGE_DOC" type="spacer" hr="false" />
 			</fieldset>
 		</fields>
 	</config>
