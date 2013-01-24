@@ -34,6 +34,30 @@ if ( !$loadMootools ) {
 # Load Pie Lib for Certain CSS3 support for IE 8 :)))
 $pie = $this->params->get('pie');
 
+# Hide Component Output front Front Page
+$paramFrontpage = $this->params->get('frontpage');
+
+# Check if we are on the home page
+$currentMenu = & JSite::getMenu();
+if ($currentMenu->getActive() == $currentMenu->getDefault())
+    {
+        $siteHome = 'home';
+    }
+    else
+    {
+        $siteHome = 'sub';
+    }
+
+
+# Load the Generator Tag content
+$loadGeneratorTag = $this->params->get('loadGeneratorTag');
+
+# Set the Generator tag content
+$this->setGenerator($loadGeneratorTag);
+
+
+
+
 
 // variables
 $app = JFactory::getApplication();
